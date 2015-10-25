@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:ignore="ResAuto">
+
+    <com.lbadvisor.AgeGroup.view.TitleBar
+        android:id="@+id/titlebar"
+        style="@style/matchWidth"
+        app:isrightvisible="false"
+        app:titlecolor="@android:color/black"
+        app:titletext="@string/register">
+    </com.lbadvisor.AgeGroup.view.TitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/nickname"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <com.lbadvisor.AgeGroup.view.ClearableEditText
+                android:id="@+id/et_nickname"
+                style="@style/matchWidth"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/nickname_hint"
+                android:maxLength="10"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/divider_line"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/register_password"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <com.lbadvisor.AgeGroup.view.ClearableEditText
+                android:id="@+id/et_pwd"
+                style="@style/matchWidth"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/register_password_hint"
+                android:maxLength="10"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/divider_line"
+            android:layout_marginTop="10dp" />
+
+
+        <Button
+            android:id="@+id/register_finish"
+            style="@style/matchWidth"
+            android:layout_marginTop="15dp"
+            android:background="#21c1d1"
+            android:text="@string/finish"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

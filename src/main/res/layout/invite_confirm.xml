@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/iv_user_icon" />
+
+        <TextView
+            android:id="@+id/tv_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_userhead"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_userhead"
+            tools:text="北京爱宠团" />
+
+        <TextView
+            android:id="@+id/tv_group_invitecode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_group_name"
+            android:layout_below="@id/tv_group_name"
+            android:layout_marginTop="10dp"
+            tools:text="李坤 A23CDK" />
+    </RelativeLayout>
+
+    <View
+        style="@style/divider_line"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/confirm" />
+
+    <View
+        style="@style/divider_line"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/GREEN" />
+</LinearLayout>

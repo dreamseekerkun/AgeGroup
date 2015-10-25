@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title">#ff333333</color>
+    <color name="frame">#61a716</color>
+    <color name="divider">#e6e6e6</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="GREEN">#2DC1C8</color>
+    <color name="light_gray">#D8D8D8</color>
+</resources>
